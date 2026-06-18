@@ -67,3 +67,17 @@ faqItems.forEach(item => {
     });
   }
 });
+
+// Flip Card Logic for Services Page
+const serviceBoxes = document.querySelectorAll('.service-box');
+
+serviceBoxes.forEach(box => {
+  box.addEventListener('click', function() {
+    this.classList.toggle('flipped');
+  });
+
+  box.addEventListener('mouseleave', function() {
+    this.classList.remove('flipped');
+  });
+});
+
